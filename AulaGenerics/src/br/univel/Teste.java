@@ -4,8 +4,6 @@ public class Teste {
 	
 	public static void main(String[] args) {
 		
-		
-		
 		Caixa<Integer> c = new CaixaImpl<Integer>();
 		
 		c.guarda(1);
@@ -25,6 +23,8 @@ public class Teste {
 		
 		c.listarTodos();
 		c2.listarTodos();
+		c2.retornaUltimo();
+		
 	
 	}
 

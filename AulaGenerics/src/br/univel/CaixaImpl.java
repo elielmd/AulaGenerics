@@ -18,6 +18,7 @@ public class CaixaImpl<xablau> implements Caixa <xablau> {
 		}
 	}
 	
+	@SuppressWarnings("unchecked")
 	public xablau retornaUltimo(){
 		return (xablau) v[--idx];
 	}
