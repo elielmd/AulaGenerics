@@ -1,10 +1,12 @@
 package br.univel;
 
-public interface Caixa {
+public interface Caixa<xablau> {
 	
-	public void guarda(Integer i);
+	public void guarda(xablau i);
 	
 	public void listarTodos();
+	
+	public xablau retornaUltimo();
 
 }
 

@@ -1,13 +1,13 @@
 package br.univel;
 
-public class Caixalmpl implements Caixa {
+public class CaixaImpl<xablau> implements Caixa <xablau> {
 	
 	 
-	private Integer [] v = new Integer[10];
+	private Object [] v = new Object[10];
 	private int idx = 0;
 
 	@Override
-	public void guarda(Integer i) {
+	public void guarda(xablau i) {
 		v[idx++] = i;	
 	}
 
@@ -16,6 +16,10 @@ public class Caixalmpl implements Caixa {
 		for (int i = 0; i < idx; i++){
 			System.out.println(v[i]);
 		}
+	}
+	
+	public xablau retornaUltimo(){
+		return (xablau) v[--idx];
 	}
 
 }
