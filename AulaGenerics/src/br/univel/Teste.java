@@ -13,6 +13,8 @@ public class Teste {
 		c.guarda(5);
 		
 		Integer ultimoInteiro = c.retornaUltimo();
+		System.out.println(ultimoInteiro);
+		c.listarTodos();
 	
 		Caixa<String> c2 = new CaixaImpl<String>();
 		c2.guarda("um");
@@ -20,11 +22,8 @@ public class Teste {
 		c2.guarda("tres");
 		
 		String ultimaString = c2.retornaUltimo();
-		
-		c.listarTodos();
+		System.out.println(ultimaString);
 		c2.listarTodos();
-		c2.retornaUltimo();
-		
 	
 	}
 
